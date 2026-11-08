@@ -1,0 +1,20 @@
+name: CastleCore
+version: 1.2.0
+main: dev.castlecore.CastleCorePlugin
+api-version: '26.2'
+description: Dynamic multi-team castle banner core and one-match team locking.
+author: OpenAI
+
+commands:
+  core:
+    description: Manage castle cores and matches.
+    usage: /core <set|setspawn|spawn|join|list|remove|start|end|status|reset>
+    permission: castlecore.use
+
+permissions:
+  castlecore.use:
+    description: Allows players to join a match team and view cores.
+    default: true
+  castlecore.admin:
+    description: Allows managing castle cores and matches.
+    default: op
